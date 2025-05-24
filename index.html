@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English:ital@0;1&display=swap"
+    rel="stylesheet">
+  <title>font and size</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+    }
+    p::first-letter {
+      font-size: 80px;
+    }
+
+    .buttons-container {
+      position: fixed;
+      left: -5px;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        text-align: left;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        padding: 4px 8px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .active {
+        border-color: orangered;
+        background-color: orangered;
+        color: #fff;
+      }
+    }
+
+    .changeImg {
+      position: fixed;
+      right: -5px;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        text-align: left;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        padding: 4px 8px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ! counter -->
+  <div class="dark">
+
+    <div style="text-align: center;" class="">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px;" class="">
+        <h2>xona xarorati: </h2>
+        <h1>0</h1>
+      </div>
+      <button style="padding: 10px" class="btn">+</button>
+      <button style="padding: 10px" class="btn">-</button>
+    </div>
+
+    <!-- ! suratni o'zgartirish -->
+    <div class="changeImg">
+      <button class="changeA" id="chButton1">🏄🏻‍♂️Big wave surfing</button>
+      <button class="changeA" id="chButton2">🏄🏻‍♂️Surfer on the beach</button>
+    </div>
+
+
+    <!-- ! font and size -->
+    <div class="buttons-container">
+      <button class="button">Cormorant Garamond</button>
+      <button class="button">EB Garamond</button>
+      <button class="button">IM Fell English</button>
+    </div>
+
+    <div class="" style="
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 25px;
+  ">
+      <h2 style="
+    text-align: center;
+    font-size: 60px;
+
+    ">Lorem, ipsum dolor.</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia facilis odio iste laudantium excepturi
+        quae nesciunt ut sapiente eum quibusdam enim rem commodi itaque cupiditate vero, libero quisquam labore
+        delectus?
+        Temporibus animi accusantium enim?
+      </p>
+
+      <p>Quidem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos ab quaerat molestias non
+        illo fugiat ea! Nemo adipisci possimus fugit! Consequatur veniam maiores possimus. Pariatur veniam inventore sit
+        modi? Laudantium excepturi optio nostrum quisquam, cumque necessitatibus blanditiis atque, aliquid reprehenderit
+        eveniet eos? Dolores, tempore.</p>
+
+      <p>Dolores, ipsum dolor sit amet consectetur adipisicing elit. Natus omnis at vitae vero ad enim impedit
+        ipsum
+        qui neque! Quidem similique illo aliquid sequi aperiam vel sapiente aspernatur odio quae possimus veritatis,
+        perspiciatis, quo, ducimus nihil ipsa numquam perferendis beatae neque dolorum corrupti? Esse perspiciatis
+        aliquid
+        at blanditiis tenetur consectetur ratione ut veritatis repellendus consequatur placeat quod magni provident
+        excepturi odit.
+      </p>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
