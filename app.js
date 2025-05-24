@@ -55,7 +55,7 @@ buttons.forEach((fBtn) => {
 
 // !====================
 // ! suratni o'zgartirish
-const changeA = document.querySelectorAll(".changeA")
+const changeA = document.querySelectorAll(".changeA");
 const image1 = ["url('/images/serfing1.jpeg')"];
 const image2 = ["url('/images/action2.jpg')"];
 chButton1.addEventListener("click", () => {
@@ -64,3 +64,28 @@ chButton1.addEventListener("click", () => {
 chButton2.addEventListener("click", () => {
   document.body.style.backgroundImage = image2;
 });
+
+// !======================
+// ! sizeni katta va kichik qilish
+// ! Best practice
+
+// ✅ Font-size boshqarish uchun best practice kod
+const content = document.querySelector("div[style*='font-size']");
+const kichikBtn = document.getElementById("kichikBtn");
+const kattaBtn = document.getElementById("kattaBtn");
+
+const STEP = 2;
+const MIN_SIZE = 14;
+const MAX_SIZE = 50;
+
+function updateFontSize(change) {
+  const currentSize = parseFloat(getComputedStyle(content).fontSize);
+  const newSize = currentSize + change;
+
+  if (newSize >= MIN_SIZE && newSize <= MAX_SIZE) {
+    content.style.fontSize = `${newSize}px`;
+  }
+}
+
+kichikBtn.addEventListener("click", () => updateFontSize(-STEP));
+kattaBtn.addEventListener("click", () => updateFontSize(STEP));
